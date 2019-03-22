@@ -4,7 +4,8 @@ Ext.define('ext_demo_001.view.login.Login',{
     requires: [
         'ext_demo_001.view.login.LoginController',
         'ext_demo_001.view.main.Main',
-        'Ext.form.Panel'
+        'Ext.form.Panel',
+        'Ext.tip.ToolTip'
     ],
     controller: 'login',
     bodyPadding: 10,
