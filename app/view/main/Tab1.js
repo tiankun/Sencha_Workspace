@@ -38,6 +38,9 @@ Ext.define('ext_demo_001.view.main.Tab1', {
         title: 'Employee Directory',
         iconCls: 'x-fa fa-users',
         xtype: 'grid',
+        height: 200,
+        layout: 'fit',
+        fullscreen: true,
         store: {
             data: [{
                 "firstName": "Jean",
@@ -56,20 +59,23 @@ Ext.define('ext_demo_001.view.main.Tab1', {
                 "phoneNumber": "(718) 480-8560"
             }]
         },
-        columns: [{
-            text: 'First Name',
-            dataIndex: 'firstName',
-            flex: 1
-        }, {
-            text: 'Last Name',
-            dataIndex: 'lastName',
-            flex: 1
-        }, {
-            text: 'Phone Number',
-            dataIndex: 'phoneNumber',
-            flex: 1
-        }]
-    },{
+        columns: [
+            {
+                text: 'First Name',
+                dataIndex: 'firstName',
+                sortable: false,  // column cannot be sorted
+                flex: 1
+            }, {
+                text: 'Last Name',
+                dataIndex: 'lastName',
+                flex: 1
+            }, {
+                text: 'Phone Number',
+                dataIndex: 'phoneNumber',
+                flex: 1,
+                hidden: false  // column is initially hidden
+            }]
+    }, {
         title: 'About Sencha',
         iconCls: 'x-fa fa-info-circle'
     }]

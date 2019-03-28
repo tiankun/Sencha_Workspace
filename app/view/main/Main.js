@@ -13,6 +13,7 @@ Ext.define('ext_demo_001.view.main.Main', {
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
         'Ext.panel.Panel',
+        'Ext.grid.Panel',
 
         'ext_demo_001.view.main.MainController',
         'ext_demo_001.view.main.MainModel',

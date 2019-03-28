@@ -1384,4 +1384,12 @@ $ext_demo_001-resource-path: 'images' !default;
 $current-package: false;
 $current-resource-root: $ext_demo_001-resource-root;
 $relative-image-path-for-uis: $ext_demo_001-resource-path;
+@import '../../../../../sass/src/view/main/Layout';
+
+/* including package ext_demo_001 */
+$ext_demo_001-resource-root: '' !default;
+$ext_demo_001-resource-path: 'images' !default;
+$current-package: false;
+$current-resource-root: $ext_demo_001-resource-root;
+$relative-image-path-for-uis: $ext_demo_001-resource-path;
 @import '../../../../../classic/sass/src/view/main/Main';

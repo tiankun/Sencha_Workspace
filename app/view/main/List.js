@@ -5,7 +5,7 @@ Ext.define('ext_demo_001.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
     requires: [
-        'ext_demo_001.store.Personnel'
+        'ext_demo_001.store.Personnel',
     ],
 
     title: 'Personnel',

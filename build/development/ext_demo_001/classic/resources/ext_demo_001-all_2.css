@@ -7859,6 +7859,25 @@
     -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 2px 2px;
     box-shadow: rgba(0, 0, 0, 0.5) 0 2px 2px;
 }
+/* F:/extjs/Sencha_Workspace/sass/src/view/main/Layout.scss:2 */
+.sbm-default-header-shadow {
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    z-index: 10 !important;
+    border-top: 3px solid #b53819 !important;
+}
+/* F:/extjs/Sencha_Workspace/sass/src/view/main/Layout.scss:10 */
+.btn03 {
+    background-color: #0aa9dc !important;
+}
+/* F:/extjs/Sencha_Workspace/sass/src/view/main/Layout.scss:13 */
+.x-btn-over {
+    color: #fff;
+    background-color: #82dc4c !important;
+    border-radius: 5px;
+}
 /* F:/extjs/Sencha_Workspace/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
 .x-tab-navigation-top {
     -webkit-border-radius: 0;

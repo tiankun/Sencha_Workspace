@@ -1,0 +1,17 @@
+$sbm-default-primary-navigation-indicator-color: #b53819;
+.sbm-default-header-shadow {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  z-index: 10 !important;
+  border-top: 3px solid $sbm-default-primary-navigation-indicator-color !important;
+}
+.btn03{
+  background-color: #0AA9DC !important;
+}
+.x-btn-over{
+  color: #fff;
+  background-color: #82dc4c !important;
+  border-radius: 5px;
+}
