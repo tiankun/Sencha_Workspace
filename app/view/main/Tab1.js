@@ -1,9 +1,10 @@
-/**
- * This view is an example list of people.
- */
+var record_start = 0;
 Ext.define('ext_demo_001.view.main.Tab1', {
     extend: 'Ext.tab.Panel',
     xtype: 'tabpannel',
+    requires:[
+        'ext_demo_001.store.Per',
+    ],
     tbar: [
         {
             xtype: 'textfield',
@@ -38,28 +39,25 @@ Ext.define('ext_demo_001.view.main.Tab1', {
         title: 'Employee Directory',
         iconCls: 'x-fa fa-users',
         xtype: 'grid',
-        height: 200,
+        border: 1,
+        style: {
+            borderColor: '#f0f',
+            borderWidth: '1px',
+            borderStyle: 'solid'
+        },
+        height: 700,
         layout: 'fit',
         fullscreen: true,
         store: {
-            data: [{
-                "firstName": "Jean",
-                "lastName": "Grey",
-                "officeLocation": "Lawrence, KS",
-                "phoneNumber": "(372) 792-6728"
-            }, {
-                "firstName": "Phillip",
-                "lastName": "Fry",
-                "officeLocation": "Lawrence, KS",
-                "phoneNumber": "(318) 224-8644"
-            }, {
-                "firstName": "Peter",
-                "lastName": "Quill",
-                "officeLocation": "Redwood City, CA",
-                "phoneNumber": "(718) 480-8560"
-            }]
+            type:'per'
         },
-        columns: [
+        columns: [{
+            header　:　"序号",
+            width　:　60,
+            renderer:function(value,metadata,record,rowIndex){
+                return　record_start　+　1　+　rowIndex;
+            }
+        },
             {
                 text: 'First Name',
                 dataIndex: 'firstName',
@@ -74,10 +72,39 @@ Ext.define('ext_demo_001.view.main.Tab1', {
                 dataIndex: 'phoneNumber',
                 flex: 1,
                 hidden: false  // column is initially hidden
-            }]
+            }, {
+                text: 'createDate',
+                flex: 1,
+                dataIndex: 'createDate',
+                formatter: 'date("Y/m/d h:s")',
+            }, {
+                text: 'Email Address',
+                dataIndex: 'email',
+                flex: 1,
+                // format the email address using a custom renderer
+                renderer: function (value) {
+                    return Ext.String.format('<a href="mailto:{0}">{1}</a>', value, value);
+                }
+            }],
+        dockedItems: [
+            {
+                xtype: 'pagingtoolbar',
+                dock: 'bottom',
+                displayInfo: true,
+                //pageSize: store.pageSize,
+                displayMsg: '当前记录 {0} - {1} 条 共 {2} 条记录',
+                emptyMsg: "No results to display",
+                prevText: "上一页",
+                nextText: "下一页",
+                refreshText: "刷新",
+                lastText: "最后页",
+                firstText: "第一页",
+                beforePageText: "当前页",
+                afterPageText: "共{0}页"
+            }
+        ],
     }, {
         title: 'About Sencha',
         iconCls: 'x-fa fa-info-circle'
     }]
-
 });
