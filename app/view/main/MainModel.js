@@ -3,7 +3,6 @@
  */
 Ext.define('ext_demo_001.view.main.MainModel', {
     extend: 'Ext.app.ViewModel',
-
     alias: 'viewmodel.main',
 
     data: {

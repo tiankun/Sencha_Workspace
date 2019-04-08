@@ -914,11 +914,13 @@ $include-ext_demo_001-store-personnel: dynamic(true);;
 $include-ext_demo_001-view-login-login: dynamic(true);;
 $include-ext_demo_001-view-login-logincontroller: dynamic(true);;
 $include-ext_demo_001-view-main-layout: dynamic(true);;
+$include-ext_demo_001-view-main-layoutmanager: dynamic(true);;
 $include-ext_demo_001-view-main-list: dynamic(true);;
 $include-ext_demo_001-view-main-main: dynamic(true);;
 $include-ext_demo_001-view-main-maincontroller: dynamic(true);;
 $include-ext_demo_001-view-main-mainmodel: dynamic(true);;
 $include-ext_demo_001-view-main-tab1: dynamic(true);;
+$include-ext_demo_001-view-main-viewmargeone: dynamic(true);;
 $output-paths: ("path": "../../classic/resources", "shared": "../../resources");
 
 /* ======================== ETC ======================== */

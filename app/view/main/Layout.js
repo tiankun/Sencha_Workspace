@@ -60,5 +60,21 @@ Ext.define('ext_demo_001.view.main.Layout', {
         bind: {
             disabled: '{!isAdmin.checked}',
         }
+    },{
+        xtype: 'fileuploadfield',
+        buttonOnly: true,
+        hideLabel: true,
+        name: 'file',
+        buttonText: '0',
+        width: 120,
+        buttonConfig: {
+            width: 60,
+            height: 60,
+            iconCls: 'x-fa fa-plus',
+            cls: 'btn-default'
+        },
+        listeners: {
+            change: 'uploadImage'
+        }
     }]
 });

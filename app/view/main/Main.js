@@ -20,6 +20,7 @@ Ext.define('ext_demo_001.view.main.Main', {
         'ext_demo_001.view.main.Tab1',
         'ext_demo_001.view.main.List',
         'ext_demo_001.view.main.Layout',
+        'ext_demo_001.view.main.LayoutManager'
     ],
 
     controller: 'main',
@@ -107,8 +108,6 @@ Ext.define('ext_demo_001.view.main.Main', {
     }, {
         title: 'Settings',
         iconCls: 'fa-cog',
-        bind: {
-            html: '{loremIpsum}'
-        }
+        xtype:'layoutManager'
     }]
 });

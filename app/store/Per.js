@@ -1,16 +1,20 @@
+let itemsPerPage = 20;
 Ext.define('ext_demo_001.store.Per', {
     extend: 'Ext.data.Store',
     alias: 'store.per',
+    start : 0,
+    limit : itemsPerPage,
+    pageSize : itemsPerPage,
     autoLoad: true,
     fields: [
-        'firstName', 'lastName', 'officeLocation','phoneNumber','email','createDate',
+        'bookName', 'description', 'author','cover','category','categoryId','price','online','createTime'
     ],
     proxy: {
-        url:'https://www.easy-mock.com/mock/5c80dfe729559949e66c79ac/example/mock',
+        url:'http://localhost:7000/book/page',
         type: 'ajax',
         reader: {
             type: 'json',
-            rootProperty: 'data'
+            rootProperty: 'result'
         }
     }
 });
