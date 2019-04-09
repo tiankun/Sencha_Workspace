@@ -9,7 +9,7 @@ Ext.application({
     extend: 'ext_demo_001.Application',
 
     requires: [
-        'ext_demo_001.view.main.Main'
+        'ext_demo_001.view.main.Main',
         //'ext_demo_001.view.login.Login'
     ],
 

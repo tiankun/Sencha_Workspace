@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'ext_demo_001' );
-$image-search-path: 'F:/extjs/Sencha_Workspace/build/development/ext_demo_001/classic/resources';
+$image-search-path: 'F:/extjs/Sencha_Workspace/build/development/ext_demo_001/classic-zh_CN/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
@@ -913,6 +913,7 @@ $include-ext_demo_001-store-per: dynamic(true);;
 $include-ext_demo_001-store-personnel: dynamic(true);;
 $include-ext_demo_001-view-login-login: dynamic(true);;
 $include-ext_demo_001-view-login-logincontroller: dynamic(true);;
+$include-ext_demo_001-view-main-formcontroller: dynamic(true);;
 $include-ext_demo_001-view-main-layout: dynamic(true);;
 $include-ext_demo_001-view-main-layoutmanager: dynamic(true);;
 $include-ext_demo_001-view-main-list: dynamic(true);;
@@ -921,7 +922,7 @@ $include-ext_demo_001-view-main-maincontroller: dynamic(true);;
 $include-ext_demo_001-view-main-mainmodel: dynamic(true);;
 $include-ext_demo_001-view-main-tab1: dynamic(true);;
 $include-ext_demo_001-view-main-viewmargeone: dynamic(true);;
-$output-paths: ("path": "../../classic/resources", "shared": "../../resources");
+$output-paths: ("path": "../../classic-zh_CN/resources", "shared": "../../resources");
 
 /* ======================== ETC ======================== */
 

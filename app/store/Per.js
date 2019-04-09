@@ -10,7 +10,7 @@ Ext.define('ext_demo_001.store.Per', {
         'bookName', 'description', 'author','cover','category','categoryId','price','online','createTime'
     ],
     proxy: {
-        url:'http://localhost:7000/book/page',
+        url:'',
         type: 'ajax',
         reader: {
             type: 'json',
