@@ -1,6 +1,7 @@
 /**
  * This view is an example list of people.
  */
+
 Ext.define('ext_demo_001.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
@@ -13,6 +14,13 @@ Ext.define('ext_demo_001.view.main.List', {
     store: {
         type: 'personnel'
     },
+    plugins: [
+        {
+        ptype: 'rowexpander',
+        rowBodyTpl: new Ext.XTemplate(
+
+            '<p><b>问题图片:</p>'),
+    }],
 
     columns: [
         { text: 'Name',  dataIndex: 'name' },
@@ -21,6 +29,8 @@ Ext.define('ext_demo_001.view.main.List', {
     ],
 
     listeners: {
-        select: 'onItemSelected'
+        select: 'onItemSelected',
+        onExtended :'onEd'
     }
 });
+

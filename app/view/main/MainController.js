@@ -11,6 +11,9 @@ Ext.define('ext_demo_001.view.main.MainController', {
     onItemSelected: function (sender, record) {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
     },
+    onEd:function(r,e,d){
+        alert(123);
+    },
 
     onConfirm: function (choice) {
         if (choice === 'yes') {
