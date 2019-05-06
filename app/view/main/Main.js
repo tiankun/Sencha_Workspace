@@ -21,6 +21,7 @@ Ext.define('ext_demo_001.view.main.Main', {
         'ext_demo_001.view.main.List',
         'ext_demo_001.view.main.Layout',
         'ext_demo_001.view.main.LayoutManager',
+        'ext_demo_001.view.main.Anchor',
     ],
 
     controller: 'main',
@@ -69,7 +70,7 @@ Ext.define('ext_demo_001.view.main.Main', {
     },
 
     defaults: {
-        bodyPadding: 20,
+        bodyPadding: 10,
         tabConfig: {
             plugins: 'responsive',
             responsiveConfig: {
@@ -109,5 +110,12 @@ Ext.define('ext_demo_001.view.main.Main', {
         title: 'Settings',
         iconCls: 'fa-cog',
         xtype:'layoutManager'
+    },{
+        title:'self',
+        iconCls:'fa fa-gamepad',
+        items:[{
+           xtype:'myanchor'
+        }]
+
     }]
 });

@@ -47,7 +47,20 @@ Ext.define('ext_demo_001.view.main.LayoutManager', {
             buttons: [
                 { text: 'Button 79' ,
                 handler:function () {
-                    tree.collapseAll();
+                    Ext.create('Ext.window.Window', {
+                        title: 'Hello',
+                        height: 200,
+                        modal: true,
+                        width: 400,
+                        layout: 'fit',
+                        items: {  // Let's put an empty grid in just to illustrate fit layout
+                            xtype: 'grid',
+                            border: false,
+                            // One header just for show. There's no data
+                            columns: [{ header: 'World' }],
+                            store: Ext.create('Ext.data.ArrayStore', {}) // A dummy empty data store
+                        }
+                    }).show();
                 }}
             ],
             bbar:[
